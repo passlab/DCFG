@@ -7,6 +7,10 @@ the static control flow graph of a binary file.
          Example: -n "foo bar" means only output CFG for functions with function names containing substring "foo" or "bar"
      -o outFileName: Specify the output file name
 
-mem_count is a memory trace tool to print the memory access of the "hello" program
+mem_count is a memory trace tool to print the memory access of the "hello" program when being executed. It has the same functionality
+as the pinatrace tool, but it runs much slower than pinatrace
+
+### Installation
+1. Download dyninst version 9.2.0 (https://github.com/dyninst/dyninst/releases/tag/v9.2.0) (The latest git repo also works) and check the README for all the dependencies software (Boost, cmake, libdwarf, libelf and libiberty). On Ubuntu, those packages can be installed by using "sudo apt-get install libboost-dev libelf-dev libiberty-dev cmake libdwarf-dev" command
 
 check the setenv.sh file for setting the env before running the CFG and mem_count
