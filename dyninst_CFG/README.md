@@ -31,3 +31,5 @@ After than replace the system libdwarf installation by overwriting the two files
 1. source the setenv.sh file: "source setenv.sh" (need to do this each time for a new shell environment/login). 
 1. "cmake ." and "make" will build the CFG executable.
 1. ./CFG hello will create the control-flow graph for hello
+1. Open CFG.cpp file to see how the control flow graph of a program are traversed and the all-in-one manual of using dyninst API is the dyninstdoc_all.pdf in this folder. Each invidual manual can be found from (https://github.com/dyninst/dyninst/releases/tag/v9.2.0). The important ones are dyninstAPI, dataflowAPI, etc. Please note the loop parsing in the dyninstAPI doc. 
+
