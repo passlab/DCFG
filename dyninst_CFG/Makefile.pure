@@ -1,8 +1,8 @@
 CFLAGS = -g -O2 -std=c++11
 #-std=gnu++0x
-INC = -I$(DYNINST_ROOT)/$(PLATFORM)/include -I$(LIBDWARF_ROOT)
-LIB = -L$(DYNINST_ROOT)/$(PLATFORM)/lib -L$(LIBDWARF_ROOT)
-DEP = -lparseAPI -lsymtabAPI -lelf -ldynDwarf -ldwarf -lelf -ldynElf -linstructionAPI -lcommon -ldyninstAPI
+INC = -I$(DYNINST_INSTALL)/$(PLATFORM)/include
+LIB = -L$(DYNINST_INSTALL)/$(PLATFORM)/lib
+DEP = -lparseAPI -lsymtabAPI -ldynDwarf -ldynElf -linstructionAPI -lcommon -ldyninstAPI
 
 default: mem_count CFG hello
 
@@ -10,7 +10,7 @@ hello: hello.c
 	gcc hello.c -o hello
 
 mem_count: mem_count.cpp
-	g++ mem_count.cpp -g -O2 -std=c++11 -I/home/yan/pintool/dyninst-install//include -Idwarf-20161021-install/ -L/home/yan/pintool/dyninst-install//lib -L/home/yan/pintool/dwarf-20161021-install/ -lparseAPI -lsymtabAPI -lelf -ldynDwarf -ldwarf -lelf -ldynElf -linstructionAPI -lcommon -ldyninstAPI -lpatchAPI -lpcontrol -lstackwalk -o mem_count
+	g++ mem_count.cpp -g -O2 -std=c++11 -I/home/yan/pintool/dyninst-install//include -L/home/yan/pintool/dyninst-install//lib -lparseAPI -lsymtabAPI -lelf -ldynDwarf -ldynElf -linstructionAPI -lcommon -ldyninstAPI -lpatchAPI -lpcontrol -lstackwalk -o mem_count
 #	g++ mem_count.cpp $(CFLAGS) $(INC) $(LIB) $(DEP) -o mem_count
 
 CFG: CFG.cpp
