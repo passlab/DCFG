@@ -15,7 +15,8 @@ So this is the easiest approach to have it running.
 
 1. "make" command will create the pin tool binaries in the folder, including edgecount, calltrace and 
 pinatrace (memory trace). Check the pintool tutorial for how to executing 
-[[pinatrace|https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/index.html#MAddressTrace]] 
+[pinatrace](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/index.html#MAddressTrace).
+The same link also contains other examples. 
 
 1. The repo contains sample pin examples for edgecount, callgraph, calltrace and memory trace and 
 related python scripts for generating related graph in graphml (or vcg/dot) based on tracing output. 
