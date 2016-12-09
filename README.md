@@ -36,4 +36,4 @@ control flow in graphml and callgraph.py generating vcg which has not yet been w
 
 ### For generating static control flow graph using dyninst
 The dyninst_CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
-dyninst installation guild to make it work. Check the README.md file in the dyninst_CFG folder.
+dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dyninst_CFG/README.md) file.
