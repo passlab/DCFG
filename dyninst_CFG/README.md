@@ -13,15 +13,15 @@ as the pinatrace tool, but it runs much slower than pinatrace
 ### Installation
 1. Download dyninst version 9.2.0 (https://github.com/dyninst/dyninst/releases/tag/v9.2.0) (The latest git repo also works) and check the README for all the dependencies software (Boost, cmake, libdwarf, libelf and libiberty). On Ubuntu, those packages can be installed by using 
       
-       sudo apt-get install libboost-dev libelf-dev libiberty-dev cmake libdwarf-dev
+           sudo apt-get install libboost-dev libelf-dev libiberty-dev cmake libdwarf-dev
 
 1. After all the prerequisite are installed, under the dyninst folder, run the following commands:
 
-       cmake -DLIBDWARF_INCLUDE_DIR=../dwarf-20161021-install -DLIBDWARF_LIBRARIES=../dwarf-20161021-install/libdwarf.so ."
+           cmake -DLIBDWARF_INCLUDE_DIR=../dwarf-20161021-install -DLIBDWARF_LIBRARIES=../dwarf-20161021-install/libdwarf.so ."
       
-       cmake -DCMAKE_INSTALL_PREFIX=/home/yan/pintool/dyninst-install .   # change the target folder you want
-       make
-       make install
+           cmake -DCMAKE_INSTALL_PREFIX=/home/yan/pintool/dyninst-install .   # change the target folder you want
+           make
+           make install
        
               
    The Ubuntu libdwarf-dev may not contain PIC-version of the libdwarf.a lib, thus the dyninst compilation will fail. 
