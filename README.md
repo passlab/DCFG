@@ -49,3 +49,4 @@ We will be using dyninst (for static analysis) and pintool (dynamic tracing) for
 1. For the memory access (particularly Load) instruction, perform analysis using SLICING of dyninst DataFlowAPI to create links of the instructions who loads data and the instruction who uses that data (Load-USE relationship).
 1. Perform cycle-distance analysis of the Load-USE instructions to identify the delay of USE instruction if the the Load is NOT from the cache.
 1. For software prefetching, identify the slot for inserting the prefetching call for the Load
+1. Extends the work to parallel program
