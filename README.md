@@ -37,7 +37,7 @@ control flow in graphml and callgraph.py generating vcg which has not yet been w
 The dyninst_CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
 dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dyninst_CFG/README.md) file.
 
-### Steps and TODO
+## Steps and TODO
 We will be using dyninst (for static analysis) and pintool (dynamic tracing) for this tool. 
 
 1. Use pintool (edgecnt and pinatrace) to generate traces of control transfer edges of basic blocks and traces of memory access (R/W and size) of instructions. 
