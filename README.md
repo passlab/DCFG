@@ -22,7 +22,7 @@ text files (calltrace.out  edgcnt.out  pinatrace.out) that can be viewed using a
         ../../../pin -t obj-intel64/pinatrace.so -- ./hello
         ../../../pin -t obj-intel64/calltrace.so -- ./hello
 
-Check the [pintool guide](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/) for more information. 
+    Check the [pintool guide](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/) for more information. 
 For example, The [pinatrace memory trace example](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/index.html#MAddressTrace).
 
 1. The repo contains sample pin examples for edgecount, callgraph, calltrace and memory trace and 
