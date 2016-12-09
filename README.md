@@ -41,7 +41,7 @@ dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dy
 We will be using dyninst (for static analysis) and pintool (dynamic tracing) for this tool. 
 
 1. Use pintool (edgecnt and pinatrace) to generate traces of control transfer edges of basic blocks and traces of memory access (R/W and size) of instructions. 
-1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the CFG.cpp file for the rest of the development.  
+1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  
 1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.
 1. Analyze the pinatrace memory traces and append the needed <instr><R|W><MemAddr><value> info to the memory-access instructions of the dyninst-loops of a function
 1. For the memory access (particularly Load) instruction, perform analysis using SLICING of dyninst DataFlowAPI to create links of the instructions who loads data and the instruction who uses that data (Load-USE relationship).
