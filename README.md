@@ -22,18 +22,19 @@ text files (calltrace.out  edgcnt.out  pinatrace.out) that can be viewed using a
         ../../../pin -t obj-intel64/pinatrace.so -- ./hello
         ../../../pin -t obj-intel64/calltrace.so -- ./hello
 
+    Those examples are modified from examples of pin distributions. You can find other examples in the source/tools folder
     Check the [pintool guide](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/) for more information. 
-For example, The [pinatrace memory trace example](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/index.html#MAddressTrace).
+    For example, The [pinatrace memory trace example](https://software.intel.com/sites/landingpage/pintool/docs/76991/Pin/html/index.html#MAddressTrace).
 
 1. There are two python scripts (callgraph.py and flowgraph.py) for generating the callgraph and control-flow 
 graph using the tracing data and objdump and sym info of the hello binary. Run the script to see the required input of 
 the python scripts. The objdump and sym file of the hello program can be generated using objdump command and readelf command. 
 Please check objdump-routine.csh script for using objdump to generate the dump needed. The repo already included the pre-generated
-tracing files, objdump (hello.s) and sym files (hello.sym and hello.main.sym). 
+tracing files, objdump (hello.s) and sym files (hello.sym and hello.main.sym). Currently the callgraphy.py generates the 
+control flow in graphml and callgraph.py generating vcg which has not yet been well tested. 
 
 for generating related graph in graphml (or vcg/dot) based on tracing output. 
-Please refer to each tracing python and example for how to use it. Those exampsl are modified from 
-examples of pin distributions. You can find other examples in the source/tools folder
+Please refer to each tracing python and example for how to use it. 
 
 1. The CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
 dyninst installation guild to make it work. Check the README.md file in the folder.
