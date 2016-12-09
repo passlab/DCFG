@@ -9,7 +9,7 @@ You need to install the latest pintool and dyninst to make the program functiona
 1. Download the latest pintool from http://www.pintool.org (currenly using rev 76991, version 3.0). 
 The website also provide tutorial and guide for using pin.
 
-1. Unzip the pintool and navigate to the source/tools folder of pinplay. Under the tool folder, 
+1. Unzip the pintool and navigate to the source/tools folder. Under the tools folder, 
 clone this rep (https://github.com/passlab/DCFG). The DCFG compilation leverages pintool building framework.
 So this is the easiest approach to have it running.
 
