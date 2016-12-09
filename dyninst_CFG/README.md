@@ -10,7 +10,7 @@ the static control flow graph of a binary file.
 mem_count is a memory trace tool to print the memory access of the "hello" program when being executed. It has the same functionality
 as the pinatrace tool, but it runs much slower than pinatrace
 
-### Installation
+### Installation of dyninst and build CFG
 1. Download dyninst version 9.2.0 (https://github.com/dyninst/dyninst/releases/tag/v9.2.0) (The latest git repo also works) and check the README for all the dependencies software (Boost, cmake, libdwarf, libelf and libiberty). On Ubuntu, those packages can be installed by using 
       
            sudo apt-get install libboost-dev libelf-dev libiberty-dev cmake libdwarf-dev
@@ -19,7 +19,7 @@ as the pinatrace tool, but it runs much slower than pinatrace
 
            cmake -DLIBDWARF_INCLUDE_DIR=../dwarf-20161021-install -DLIBDWARF_LIBRARIES=../dwarf-20161021-install/libdwarf.so ."
       
-           cmake -DCMAKE_INSTALL_PREFIX=/home/yan/pintool/dyninst-install .   # change the target folder you want
+           cmake -DCMAKE_INSTALL_PREFIX=/home/yan/pintool/dyninst-install .   # change the target folder you want, it is for DYNINST_INSTALL later
            make
            make install
        
@@ -27,6 +27,9 @@ as the pinatrace tool, but it runs much slower than pinatrace
    The Ubuntu libdwarf-dev may not contain PIC-version of the libdwarf.a lib, thus the dyninst compilation will fail. 
    If this is the case for you, it is easier for just install it manually after downloading it from 
 https://www.prevanders.net/dwarf.html. The installation is pretty easy, in the source folder, firing "configure", and then "make" commands. 
-After than replace the system libdwarf installation by overwriting the two files "sudo cp libdwarf/libdwarf.a /usr/lib", and "sudo cp libdwarf/libdwarf.h /usr/include". After that, redo the last step (cmake/make/make install)
+After than replace the system libdwarf installation by overwriting the two files "sudo cp libdwarf/libdwarf.a /usr/lib", and "sudo cp libdwarf/libdwarf.h /usr/include". After that, redo the cmake/make/make install steps for installation
 
-check the setenv.sh file for setting the env before running the CFG and mem_count
+1. cd to the dyninst_CFG folder and modify the setenv.sh file so the DYNINST_INSTALL env points to where the dyninst is installed
+1. source the setenv.sh file "source setenv.sh" (need to do this each time for a new shell environment/login). 
+1. "cmake ." and "make" will build the CFG executable.
+1. ./CFG hello will create the control-flow graph for hello
