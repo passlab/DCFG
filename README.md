@@ -4,6 +4,20 @@ and parallel program. The tool is developed on top of pintool for binary
 instrumentatio (http://pintool.org) and dyninst for binary analysis (http://www.dyninst.org/). 
 You need to install the latest pintool and dyninst to make the program functional. 
 
+#### Steps
+We will be using dyninst (for static analysis) and pintool (dynamic tracing) for this tool. 
+
+1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. 
+1. Use pintool (edgecnt and pinatrace) to generate traces of control transfer edges of basic blocks and memory access (R/W and size) of instructions. 
+1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.
+1. Analyze the pinatrace traces and append the needed <instr><R|W><MemAddr><value> info to the instruction of the dyninst-loops of a function
+1. Binary instruction analysis using SLICING of dyninst DataFlowAPI to create links of the instructions who load data from memory and the instruction who use that data (Load-USE relationship).
+1. Perform cycle-distance analysis of the Load-USE instructions to identify the delay of USE instruction if the the Load is NOT from the cache.
+1. For software prefetching, identify the slot for inserting the prefetching call for the Load
+
+
+
+
 ### For installation on Linux
 
 1. Download the latest pintool from http://www.pintool.org (currenly using rev 76991, version 3.0). 
