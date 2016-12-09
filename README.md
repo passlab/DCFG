@@ -33,8 +33,7 @@ Please check objdump-routine.csh script for using objdump to generate the dump n
 tracing files, objdump (hello.s) and sym files (hello.sym and hello.main.sym). Currently the callgraphy.py generates the 
 control flow in graphml and callgraph.py generating vcg which has not yet been well tested. 
 
-for generating related graph in graphml (or vcg/dot) based on tracing output. 
-Please refer to each tracing python and example for how to use it. 
 
-1. The CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
-dyninst installation guild to make it work. Check the README.md file in the folder.
+### For generating static control flow graph using dyninst
+The dyninst_CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
+dyninst installation guild to make it work. Check the README.md file in the dyninst_CFG folder.
