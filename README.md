@@ -25,7 +25,7 @@ dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dy
 =============================================================
 ## General Steps
 
-1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_example-pinplay) folder) to generate 
+1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_dependency-pinplay) folder) to generate 
 DCFG, loop region and slicing information. Profiling (e.g. using PAPI or cycle info from pin if it can), and 
 graph and binary analysis may be needed to identify the hotspot of performance loss (e.g. poor locality, cache/bus contention, etc). 
 1. Use pintool pinatrace to generate traces of memory access (R/W and size) of instructions. 
