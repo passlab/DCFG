@@ -1,0 +1,4 @@
+set remotetimeout 30000
+source /nfs/mmdc/disks/tpi6/proj/PinPlayExternal/DrDebug/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/scripts/pin.py
+target remote :43448
+

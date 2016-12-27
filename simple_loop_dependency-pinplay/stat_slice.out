@@ -1,0 +1,6 @@
+TotalCheckAgaintMemDepListCount = 0
+TotalSizeOfMemDepList = 0
+TotalCheckAgainstRegDepListCount = 0
+TotalSizeOfRegDepList = 0
+Total Instruction Count = 25
+Number of Sliced Instructions = 0

@@ -1,0 +1,58 @@
+-- start of image-load-log --------------------------------------- 
+Loading /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop(0x000400000:0x0004007b3)
+Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
+Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
+preloaded_image: 1 1  0x000000000 0x7f6acc05ab20 0x000600e68 0x000000000 /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop
+preloaded_image: 2 0 0x000000000 0x7f6acc05ab20 0x342021fdf0 0x000000000 /lib64/ld-linux-x86-64.so.2
+-- end of image-load-log ----------------------------------------- 
+copy_images: 0
+inscount: 135219
+OSTid: 40634
+log_entries: 90
+ended_before_sc: 0
+num_logged_true_dependencies (RAW): 0
+num_logged_false_dependencies (WAR/WAW): 0
+num_signals 0
+num_syscalls: 136
+ip_type: init_pc: 0x3420001130
+ip_type:last_pc: 0x34208acdc6
+restore_text_pc: 1
+ip_entry:restoretext_pc: 0x3420884d00
+ip_entry:restoretext_pc: 0x3420009210
+ip_entry:restoretext_pc: 0x342000b638
+ip_entry:restoretext_pc: 0x34208901b0
+ip_entry:restoretext_pc: 0x342000b687
+ip_entry:restoretext_pc: 0x3420844339
+ip_entry:restoretext_pc: 0x342001171f
+ip_entry:restoretext_pc: 0x3420015f57
+ip_entry:restoretext_pc: 0x342001174c
+ip_entry:restoretext_pc: 0x3420015fea
+ip_entry:restoretext_pc: 0x342000b826
+ip_entry:restoretext_pc: 0x342081eb92
+ip_entry:restoretext_pc: 0x34208722db
+ip_entry:restoretext_pc: 0x342000b92f
+ip_entry:restoretext_pc: 0x342000290e
+ip_entry:restoretext_pc: 0x3420001130
+ip_entry:restoretext_pc: 0x3420001156
+ip_entry:restoretext_pc: 0x342000116e
+ip_entry:restoretext_pc: 0x3420017a5a
+ip_entry:restoretext_pc: 0x34200162d0
+ip_entry:restoretext_pc: 0x3420004e95
+ip_entry:restoretext_pc: 0x3420008b13
+ip_entry:restoretext_pc: 0x3420018816
+ip_entry:restoretext_pc: 0x3420002b70
+ip_entry:restoretext_pc: 0x3420001fdd
+ip_entry:restoretext_pc: 0x342000f86e
+ip_entry:restoretext_pc: 0x3420008cdb
+ip_entry:restoretext_pc: 0x3420008d24
+ip_entry:restoretext_pc: 0x3420008da2
+ip_entry:restoretext_pc: 0x3420003982
+ip_entry:restoretext_pc: 0x3420008de4
+ip_entry:restoretext_pc: 0x3420008241
+ip_entry:restoretext_pc: 0x34200077ab
+ip_entry:restoretext_pc: 0x3420835bf4
+ip_entry:restoretext_pc: 0x3420009bfc
+ip_entry:restoretext_pc: 0x342000fc45
+ip_entry:restoretext_pc: 0x3420009c2f
+ip_entry:restoretext_pc: 0x3420002502
+ip_entry:restoretext_pc: 0x3420009dfd

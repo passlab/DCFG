@@ -1,0 +1,43 @@
+Enabled messages [UnixVersion()] 26  info: Informational messages (enabled by default)
+Pinball basename: whole.pinball/log_0
+Replaying on 'Linux', recorded on ''
+Using the new SYSCALL_REPLAYER
+Found VDSO in page 0x7fff185fa000
+NOP sequence address allocated in empty range 0x000401000 
+[0] Pinball basename: /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/region.pinball/log
+Relogging run, will wait for Ok signal from replayer
+Loading /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop(0x000400000:0x0004007b3)
+Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
+[0] Started logging thread OSPid: 40949 OSTid: 40949
+[0] Started Replaying thread OSPid: 40949 OSTid: 40949
+[0] THREADID: 0
+[0] Loading dynamic pages
+[0] Restoring initial pages
+[0] Initial checkpoint restored for thread
+[0] All threads were created, ready to replay 
+[0] ThreadStart Initial IP: 0x3420001130
+Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
+[0] region-start
+[0] + RECEIVED AND PROCESSED START event: ip:0x00040059d icount: 0 time:Tue Dec 27 06:10:47 2016
+[0] Stopping all threads - processing controller event
+[0] Stopping all threadssucceeded
+[0] + STARTING NEW REGION at: ip:0x0004005b3 icount: 0 time:Tue Dec 27 06:10:47 2016
+[0]  Region# : 0
+[0] Region has 1 existing threads(s)
+[0] Resuming all threads - complied processing controller event
+[0] InitRegion : 0
+[0] region-end
+[0] + RECEIVED STOP event: icount: 18 time:Tue Dec 27 06:10:47 2016
+[0] Stopping all threads - processing controller event
+[0] Stopping all threadssucceeded
+[0] EndRegion called for pp_id: 0
+[0] Closing global resources.
+[0] Wrote address ranges: pagecount: 3. Logged text pages count:3 Logged data pages count:0 (total logged pages:3)
+[0] Resuming all threads - complied processing controller event
+[0] End of thread reached: 135219 final count: 135219
+[0] Wait for all threads to finish 
+[0] Finished replaying thread OSPid: 40949 OSTid: 40949, 135219 instructions
+[0] ThreadFini
+[0] ThreadFini: logger thread at 0x7f327379f8e8
+[0] EndRegion called for pp_id: 0
+Process exit with status 0

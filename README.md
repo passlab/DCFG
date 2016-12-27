@@ -1,5 +1,5 @@
 
-### pinplay simple loop example from [pinplay tutorial during PLDI 2016](https://sites.google.com/site/pinplaypldi2016tutorial/)
+### pinplay simple loop dependency example from [pinplay tutorial during PLDI 2016](https://sites.google.com/site/pinplaypldi2016tutorial/)
 The example shows step-by-step using scripts how to generate dynamic control flow graph, 
 loop region, and dynamic slicing using pinplay. The example currently only works on fornax due to 
 some bugs mentioned in the README file for Ubuntu. 
@@ -16,7 +16,7 @@ dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dy
 =============================================================
 ## General Steps
 We will be using dyninst (for static analysis) and pintool (dynamic tracing) for this tool. 
-1. Use pinplay (check [simple_loop_example-pinplay](simple_loop_example-pinplay) folder) to generate 
+1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_example-pinplay) folder) to generate 
 DCFG, loop region and slicing information. 
 1. Use pintool pinatrace to generate traces of memory access (R/W and size) of instructions. 
 1. ~~Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  

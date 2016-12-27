@@ -1,0 +1,7 @@
+ thread id0 count 25
+ totalInstCount = 25
+ globalCount = 25
+TotalInstructionInfoSize = 406
+MaximumInstructionInfoSize = 38
+AverageInstructionInfoSize = 16
+Total Shared Memory Access Order Count = 0

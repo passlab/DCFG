@@ -1,0 +1,18 @@
+Enabled messages [UnixVersion()] 26  info: Informational messages (enabled by default)
+Pinball basename: region.pinball/log_0
+Replaying on 'Linux', recorded on ''
+Using the new SYSCALL_REPLAYER
+Found VDSO in page 0x7ffc08916000
+NOP sequence address allocated in empty range 0x000401000 
+[0] Started Replaying thread OSPid: 41177 OSTid: 41177
+[0] THREADID: 0
+[0] Loading dynamic pages
+[0] Restoring initial pages
+[0] Initial checkpoint restored for thread
+[0] All threads were created, ready to replay 
+[0] ThreadStart Initial IP: 0x0004005c8
+[0] End of thread reached: 25 final count: 25
+[0] Wait for all threads to finish 
+[0] Finished replaying thread OSPid: 41177 OSTid: 41177, 25 instructions
+[0] ThreadFini
+Process exit with status 0

@@ -1,0 +1,11 @@
+CAUTION: Known issues with loop specification on Ubuntu. 
+  The loop tracker knob, "-loop-tracker:trace-loops 'foo.c.N'" fails 
+   on Ubuntu due to some quites handling issue. We will fix this soon.
+Run the following commands in order.
+  [in tcsh]
+   setenv PIN_ROOT <path to pldi2016 PinPlay kit>
+   make
+   record-whole.sh
+   process-whole.sh
+   process-region.sh
+   slice-region.sh

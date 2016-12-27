@@ -1,0 +1,36 @@
+Enabled messages [UnixVersion()] 26  info: Informational messages (enabled by default)
+[0] Pinball basename: /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/whole.pinball/log
+Found VDSO area from Pin AUXV at 0x7ffc89aee000:0x7ffc89aef000
+Loading /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop(0x000400000:0x0004007b3)
+Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
+[0] Started logging thread OSPid: 40634 OSTid: 40634
+[0] region-start
+[0] + RECEIVED AND PROCESSED START event: ip:0x3420000b00 icount: 0 time:Tue Dec 27 06:05:53 2016
+Replacing AT_SYSINFO_EHDR
+	 from AT_SYSINFO_EHDR, 0x7ffc89aee000
+	 to AT_IGNORE,0
+[0] Stopping all threads - processing controller event
+[0] Stopping all threadssucceeded
+[0] + STARTING NEW REGION at: ip:0x3420000b03 icount: 0 time:Tue Dec 27 06:05:53 2016
+[0]  Region# : 0
+[0] Region has 1 existing threads(s)
+[0] Resuming all threads - complied processing controller event
+[0] InitRegion : 0
+[0] LogPage - Update existing logged text page: 0x342021f000 early 1 icount 15 
+[0] LogPage - Update existing logged text page: 0x3420220000 early 1 icount 19 
+[0] LogPage - Update existing logged text page: 0x3420000000 early 1 icount 345 
+[0] LogPage - Update existing logged text page: 0x3420221000 early 1 icount 398 
+[0] LogPage - Update existing logged text page: 0x342001a000 early 1 icount 607 
+[0] LogPage - Update existing logged text page: 0x342001b000 early 1 icount 1149 
+[0] LogPage - Update existing logged text page: 0x000400000 early 1 icount 1755 
+[0] LogPage - Update existing logged text page: 0x000600000 early 1 icount 1954 
+[0] LogPage - Update existing logged text page: 0x000601000 early 1 icount 120479 
+Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
+[0] LogPage - Update existing logged text page: 0x3420b90000 early 1 icount 128160 
+[0] LogPage - Update existing logged text page: 0x3420952000 early 1 icount 128383 
+[0] LogPage - Update existing logged text page: 0x3420b8f000 early 1 icount 131523 
+[0] LogPage - Update existing logged text page: 0x342094f000 early 1 icount 133155 
+[0] EndRegion called for pp_id: 0
+[0] ThreadFini: logger thread at 0x34208acdc6
+[0] Closing global resources.
+[0] Wrote address ranges: pagecount: 460. Logged text pages count:460 Logged data pages count:0 (total logged pages:460)
