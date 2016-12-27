@@ -15,7 +15,7 @@ dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dy
 
 =============================================================
 ## General Steps
-We will be using dyninst (for static analysis) and pintool (dynamic tracing) for this tool. 
+
 1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_example-pinplay) folder) to generate 
 DCFG, loop region and slicing information. 
 1. Use pintool pinatrace to generate traces of memory access (R/W and size) of instructions. 
