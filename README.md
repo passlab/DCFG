@@ -26,7 +26,7 @@ graph and binary analysis may be needed to identify the hotspot of performance l
 1. For software prefetching, identify the slot for inserting the prefetching call for the Load
 1. Extends the work to parallel program
 
-## Others that may be helpful
+### Others that may be helpful
 
 1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  
 1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.
