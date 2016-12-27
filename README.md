@@ -11,7 +11,9 @@ for software prefetching.
 The example in [simple_loop_dependency-pinplay](simple_loop_dependency-pinplay) folder 
 shows step-by-step how to generate dynamic control flow graph, 
 loop region, and dynamic slicing using pinplay. The example currently only works on fornax due to 
-some bugs mentioned in the README file for Ubuntu. 
+some bugs mentioned in the README file for Ubuntu. The folder currently contains both the orginal 
+source files and all the output files after the complete execution on fornax. check the README file for 
+the scripts used to generate the output. 
 
 ### 2. pintool examples for memory tracing, edge count of basic block and call tracing
 The [pin_examples](pin_examples) folder contains three usefule examples, memory trace(pinatrace), 
