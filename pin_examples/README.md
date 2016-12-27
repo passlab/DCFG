@@ -1,8 +1,7 @@
-The repository contains source code for a tool to create dynamic control- and 
-data-flow graph with memory trace and NUMA/cache access behavior of a sequetial
-and parallel program. The tool is developed on top of pintool for binary 
-instrumentatio (http://pintool.org) and dyninst for binary analysis (http://www.dyninst.org/). 
-You need to install the latest pintool and dyninst to make the program functional. 
+The repository contains three usefule examples, memory trace(pinatrace), edgecnt and calltrace
+for understanding how to use [pin](http://pintool.org) to trace memory access, 
+basic blocks and function calls. 
+You need to install the latest pintool to make the example functional. 
 
 ### For installation on Linux
 
@@ -10,7 +9,8 @@ You need to install the latest pintool and dyninst to make the program functiona
 The website also provide tutorial and guide for using pin.
 
 1. Unzip the pintool and navigate to the source/tools folder of pinplay. Under the tool folder, 
-clone this rep (https://github.com/passlab/DCFG). The DCFG compilation leverages pintool building framework.
+clone this rep (https://github.com/passlab/DCFG) and copy this folder to the source/tools folder. 
+The pin_examples compilation leverages pintool building framework.
 So this is the easiest approach to have it running.
 
 1. "make" command will create the pin tool binaries in the folder, including edgecount, calltrace and 
@@ -32,8 +32,3 @@ the python scripts. The objdump and sym file of the hello program can be generat
 Please check objdump-routine.csh script for using objdump to generate the dump needed. The repo already included the pre-generated
 tracing files, objdump (hello.s) and sym files (hello.sym and hello.main.sym). Currently the callgraphy.py generates the 
 control flow in graphml and callgraph.py generating vcg which has not yet been well tested. 
-
-
-### For generating static control flow graph using dyninst
-The dyninst_CFG folder contains sources for generating dot-based CFG using dyninst and you need to follow
-dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dyninst_CFG/README.md) file.
