@@ -17,12 +17,17 @@ dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dy
 ## General Steps
 
 1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_example-pinplay) folder) to generate 
-DCFG, loop region and slicing information. 
+DCFG, loop region and slicing information. Profiling (e.g. using PAPI or cycle info from pin if it can), and 
+graph and binary analysis may be needed to identify the hotspot of performance loss (e.g. poor locality, cache/bus contention, etc). 
 1. Use pintool pinatrace to generate traces of memory access (R/W and size) of instructions. 
-1. ~~Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  
-1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.~~
 1. Analyze the pinatrace memory traces and append the needed <instr><R|W><MemAddr><value> info to the memory-access instructions of the dyninst-loops of a function
-1. For the memory access (particularly Load) instruction, perform analysis using SLICING of dyninst DataFlowAPI to create links of the instructions who loads data and the instruction who uses that data (Load-USE relationship).
+1. For the memory access (particularly Load) instruction, perform analysis using SLICING to create links of the instructions who loads data and the instruction who uses that data (Load-USE relationship).
 1. Perform cycle-distance analysis of the Load-USE instructions to identify the delay of USE instruction if the the Load is NOT from the cache.
 1. For software prefetching, identify the slot for inserting the prefetching call for the Load
 1. Extends the work to parallel program
+
+## Others that may be helpful
+
+1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  
+1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.
+1. Use Dyninst DataFlowAPI and SLICING
