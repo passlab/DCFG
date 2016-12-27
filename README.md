@@ -1,20 +1,29 @@
 
-### pinplay simple loop dependency example from [pinplay tutorial during PLDI 2016](https://sites.google.com/site/pinplaypldi2016tutorial/)
-The example shows step-by-step using scripts how to generate dynamic control flow graph, 
+## Binary Analysis and Optimization
+We aim to build a tool for binary analysis and optimizations and our first usage is binary instrumentation
+for software prefetching. 
+
+
+
+### The following three examples are used as basis for our development: 
+
+#### pinplay simple loop dependency example from [pinplay tutorial during PLDI 2016](https://sites.google.com/site/pinplaypldi2016tutorial/)
+The example in [simple_loop_dependency-pinplay](simple_loop_dependency-pinplay) folder 
+shows step-by-step how to generate dynamic control flow graph, 
 loop region, and dynamic slicing using pinplay. The example currently only works on fornax due to 
 some bugs mentioned in the README file for Ubuntu. 
 
-### pintool examples for memory tracing, edge count of basic block and call tracing
+#### pintool examples for memory tracing, edge count of basic block and call tracing
 The [pin_examples](pin_examples) folder contains three usefule examples, memory trace(pinatrace), 
 edgecnt and calltrace for help understanding how to use [pin](http://pintool.org) to trace memory access, 
 basic blocks and function calls. 
 
-### dyninst example for statically generating static control flow graph
+#### dyninst example for statically generating static control flow graph
 The [dyninst_CFG](dyninst_CFG) folder contains sources for generating dot-based CFG using dyninst and you need to follow
 dyninst installation guild to make it work. Check the [dyninst_CFG/README.md](dyninst_CFG/README.md) file.
 
 =============================================================
-## General Steps
+### General Steps
 
 1. Use pinplay (check [simple_loop_dependency-pinplay](simple_loop_example-pinplay) folder) to generate 
 DCFG, loop region and slicing information. Profiling (e.g. using PAPI or cycle info from pin if it can), and 
@@ -26,7 +35,7 @@ graph and binary analysis may be needed to identify the hotspot of performance l
 1. For software prefetching, identify the slot for inserting the prefetching call for the Load
 1. Extends the work to parallel program
 
-### Others that may be useful
+#### Others that may be useful
 
 1. Use Dyninst interfaces for retrieving function, loops and loop nest, and static CFG for a binary program. We will start with the [CFG.cpp](dyninst_CFG/CFG.cpp) file for the rest of the development.  
 1. Analyze the edgecnt traces and append # of calls of each edge to the edge in the static CFG of the dyninst-loops of a function.
