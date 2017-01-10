@@ -66,7 +66,7 @@ OS_Computer_name='fornax'
 OS_User_name='yan'
 OS_Version='Linux fornax 2.6.32-573.12.1.el6.x86_64 #1 SMP Tue Dec 15 21:19:08 UTC 2015 intel64'
 />
-<process pid='28284' name='./simple_loop' cr3='0x000000000'><!-- CR3 value unknown -->
+<process pid='29093' name='./simple_loop' cr3='0x000000000'><!-- CR3 value unknown -->
 	<module
 		path='/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop'
 		name='simple_loop'

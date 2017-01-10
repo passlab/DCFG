@@ -2,5 +2,5 @@
 # image /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop 0x000400000 0x0004007c3 1  
 # image /lib64/ld-linux-x86-64.so.2 0x3420000000 0x342001fa0f 0 
 # image /lib64/libc.so.6 0x3420800000 0x3420b93907 0 
- simple_loop.c:6 #  1:100
+ simple_loop.c:6 #  1:10
  simple_loop.c:8 #  1:1

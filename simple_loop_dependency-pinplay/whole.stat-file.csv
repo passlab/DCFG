@@ -1,6 +1,6 @@
 loop id,source file,source line number,entry-source-address,entry-source-count,entry-address,total-count,start-count,end-count
-31,/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop.c,5,0x40059d,1,0x4005d3,101,1,101
+31,/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop.c,5,0x40059d,1,0x4005d3,11,1,11
 startAddr endAddr# bbId source file:line number execCount
-0x4005b5 0x4005c9 # bbid 30 simple_loop.c:6 100
-0x4005cf 0x4005cf # bbid 30 simple_loop.c:5 100
-0x4005d3 0x4005dc # bbid 31 simple_loop.c:5 101
+0x4005b5 0x4005c9 # bbid 30 simple_loop.c:6 10
+0x4005cf 0x4005cf # bbid 30 simple_loop.c:5 10
+0x4005d3 0x4005dc # bbid 31 simple_loop.c:5 11

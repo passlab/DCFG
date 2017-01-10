@@ -1,6 +1,6 @@
 pin-command-line: /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/intel64/bin/pinbin -p32 /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/ia32/bin/pinbin -follow_execv -t /home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/dcfg/bin/intel64/dcfg-driver.so -log -xyzzy -log:basename whole.pinball/log -log:mt 1 -log:compressed bzip2 -log:region_id -log:whole_image -log:pages_early 1 -dcfg
 app-command-line: ./simple_loop
-OSPid: 28234
+OSPid: 29003
 file_type: text
 lit: 0
 user_name: yan
@@ -10,14 +10,14 @@ arch: x86_64
 num_static_threads: 1
 num_dynamic_threads: 1
 num_threads_started: 1
-log creation date/time: Tue Jan 10 21:35:33 2017
+log creation date/time: Tue Jan 10 21:47:08 2017
 log format version: 2.5
 charm revision: 76887
 linker_break_address: 0x342000eeb0
 data_page_size:  4096
 text_page_size:  4096
 smc_detected_info_contained:
-vdso_address: 0x7ffd77547000 0x7ffd77548000
+vdso_address: 0x7fff20591000 0x7fff20592000
 ip_entry:syscall: 0x3420002564 L64
 ip_entry:syscall: 0x3420016828 L64
 ip_entry:syscall: 0x34200173a3 L64

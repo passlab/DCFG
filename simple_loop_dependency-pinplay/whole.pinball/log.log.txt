@@ -1,17 +1,17 @@
 Enabled messages [UnixVersion()] 26  info: Informational messages (enabled by default)
 [0] Pinball basename: /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/whole.pinball/log
-Found VDSO area from Pin AUXV at 0x7ffd77547000:0x7ffd77548000
+Found VDSO area from Pin AUXV at 0x7fff20591000:0x7fff20592000
 Loading /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop(0x000400000:0x0004007c3)
 Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
-[0] Started logging thread OSPid: 28234 OSTid: 28234
+[0] Started logging thread OSPid: 29003 OSTid: 29003
 [0] region-start
-[0] + RECEIVED AND PROCESSED START event: ip:0x3420000b00 icount: 0 time:Tue Jan 10 21:35:26 2017
+[0] + RECEIVED AND PROCESSED START event: ip:0x3420000b00 icount: 0 time:Tue Jan 10 21:47:02 2017
 Replacing AT_SYSINFO_EHDR
-	 from AT_SYSINFO_EHDR, 0x7ffd77547000
+	 from AT_SYSINFO_EHDR, 0x7fff20591000
 	 to AT_IGNORE,0
 [0] Stopping all threads - processing controller event
 [0] Stopping all threadssucceeded
-[0] + STARTING NEW REGION at: ip:0x3420000b03 icount: 0 time:Tue Jan 10 21:35:26 2017
+[0] + STARTING NEW REGION at: ip:0x3420000b03 icount: 0 time:Tue Jan 10 21:47:02 2017
 [0]  Region# : 0
 [0] Region has 1 existing threads(s)
 [0] Resuming all threads - complied processing controller event
@@ -29,7 +29,7 @@ Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
 [0] LogPage - Update existing logged text page: 0x3420b90000 early 1 icount 128149 
 [0] LogPage - Update existing logged text page: 0x3420952000 early 1 icount 128355 
 [0] LogPage - Update existing logged text page: 0x3420b8f000 early 1 icount 131495 
-[0] LogPage - Update existing logged text page: 0x342094f000 early 1 icount 134110 
+[0] LogPage - Update existing logged text page: 0x342094f000 early 1 icount 133210 
 [0] EndRegion called for pp_id: 0
 [0] ThreadFini: logger thread at 0x34208acdc6
 [0] Closing global resources.

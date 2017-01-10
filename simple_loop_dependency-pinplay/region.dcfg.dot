@@ -1,9 +1,9 @@
 # This file is in the DOT graph-visualization language.
 # See http://www.graphviz.org for a list of programs to render the graph.
 digraph dcfg {
- subgraph cluster_pid28234 {
+ subgraph cluster_pid29003 {
   color=blue;
-  label="Process 28234";
+  label="Process 29003";
   subgraph cluster_image1 {
    color=plum;
    label="Image 1\n/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop\nload-addr = 0x400000\nsize = 1988";
@@ -11,10 +11,10 @@ digraph dcfg {
    color=violet;
    label="Routine 29\nname='main'\naddr=0x40059d";
    node33 [label="BB 33\naddr=0x4005f5\nnum-instrs=2\nexecutions=0"];
-   node1738 [label="BB 1738\naddr=0x4005d3\nnum-instrs=2\nexecutions=100"];
-   node1739 [label="BB 1739\naddr=0x4005dc\nnum-instrs=1\nexecutions=101"];
+   node1738 [label="BB 1738\naddr=0x4005d3\nnum-instrs=2\nexecutions=10"];
+   node1739 [label="BB 1739\naddr=0x4005dc\nnum-instrs=1\nexecutions=11"];
    node29 [label="BB 29\naddr=0x40059d\nnum-instrs=7\nexecutions=0"];
-   node30 [label="BB 30\naddr=0x4005b5\nnum-instrs=7\nexecutions=100"];
+   node30 [label="BB 30\naddr=0x4005b5\nnum-instrs=7\nexecutions=10"];
    node32 [label="BB 32\naddr=0x4005de\nnum-instrs=5\nexecutions=1"];
   }
   } /* image1 */
@@ -34,15 +34,15 @@ node1 -> node1739 [label="EDGE2532\nENTRY\nexecutions=1"];
    node1;
 node1503 -> node33 [label="EDGE1100\nRETURN\nexecutions=0"];
    node1503 [label="BB 1503\naddr=0x342084f18a\nnum-instrs=2\nexecutions=0"];
-node1738 -> node1739 [label="EDGE2529\nFALL_THROUGH\nexecutions=100"];
+node1738 -> node1739 [label="EDGE2529\nFALL_THROUGH\nexecutions=10"];
 node32 -> node9 [label="EDGE1905\nDIRECT_CALL\nexecutions=1"];
    node9 [label="BB 9\naddr=0x400410\nnum-instrs=1\nexecutions=1"];
 node32 -> node33 [label="EDGE2375\nCALL_BYPASS\nexecutions=0"];
 node29 -> node1738 [label="EDGE2534\nDIRECT_UNCONDITIONAL_BRANCH\nexecutions=0"];
 node33 -> node13 [label="EDGE2027\nDIRECT_CALL\nexecutions=0"];
    node13 [label="BB 13\naddr=0x400430\nnum-instrs=1\nexecutions=0"];
-node1739 -> node30 [label="EDGE2528\nDIRECT_CONDITIONAL_BRANCH\nexecutions=100"];
-node30 -> node1738 [label="EDGE2530\nFALL_THROUGH\nexecutions=100"];
+node1739 -> node30 [label="EDGE2528\nDIRECT_CONDITIONAL_BRANCH\nexecutions=10"];
+node30 -> node1738 [label="EDGE2530\nFALL_THROUGH\nexecutions=10"];
 node1739 -> node32 [label="EDGE2533\nFALL_THROUGH\nexecutions=1"];
- } /* pid28234 */
+ } /* pid29003 */
 }

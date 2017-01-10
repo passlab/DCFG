@@ -2,13 +2,13 @@
 Loading /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop(0x000400000:0x0004007c3)
 Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
 Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
-preloaded_image: 1 1  0x000000000 0x7fefb0215b20 0x000600e68 0x000000000 /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop
-preloaded_image: 2 0 0x000000000 0x7fefb0215b20 0x342021fdf0 0x000000000 /lib64/ld-linux-x86-64.so.2
-preloaded_image: 3 0 0x000000000 0x7fefb0215b20 0x3420b8db40 0x000000000 /lib64/libc.so.6
+preloaded_image: 1 1  0x000000000 0x7f6010962b20 0x000600e68 0x000000000 /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop
+preloaded_image: 2 0 0x000000000 0x7f6010962b20 0x342021fdf0 0x000000000 /lib64/ld-linux-x86-64.so.2
+preloaded_image: 3 0 0x000000000 0x7f6010962b20 0x3420b8db40 0x000000000 /lib64/libc.so.6
 -- end of image-load-log ----------------------------------------- 
 copy_images: 0
-inscount: 1008
-OSTid: 28284
+inscount: 108
+OSTid: 29093
 log_entries: 0
 ended_before_sc: 0
 num_logged_true_dependencies (RAW): 0

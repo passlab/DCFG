@@ -2,17 +2,17 @@ Enabled messages [UnixVersion()] 26  info: Informational messages (enabled by de
 Pinball basename: whole.pinball/log_0
 Replaying on 'Linux', recorded on ''
 Using the new SYSCALL_REPLAYER
-Found VDSO in page 0x7ffc141fc000
+Found VDSO in page 0x7ffe1c3fd000
 NOP sequence address allocated in empty range 0x000401000 
-[0] Started Replaying thread OSPid: 28250 OSTid: 28250
+[0] Started Replaying thread OSPid: 29059 OSTid: 29059
 [0] THREADID: 0
 [0] Loading dynamic pages
 [0] Restoring initial pages
 [0] Initial checkpoint restored for thread
 [0] All threads were created, ready to replay 
 [0] ThreadStart Initial IP: 0x3420001130
-[0] End of thread reached: 136174 final count: 136174
+[0] End of thread reached: 135274 final count: 135274
 [0] Wait for all threads to finish 
-[0] Finished replaying thread OSPid: 28250 OSTid: 28250, 136174 instructions
+[0] Finished replaying thread OSPid: 29059 OSTid: 29059, 135274 instructions
 [0] ThreadFini
 Process exit with status 0

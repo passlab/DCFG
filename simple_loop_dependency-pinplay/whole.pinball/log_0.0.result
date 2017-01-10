@@ -2,12 +2,12 @@
 Loading /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop(0x000400000:0x0004007c3)
 Loading /lib64/ld-linux-x86-64.so.2(0x3420000000:0x342001fa0f)
 Loading /lib64/libc.so.6(0x3420800000:0x3420b93907)
-preloaded_image: 1 1  0x000000000 0x7fefb0215b20 0x000600e68 0x000000000 /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop
-preloaded_image: 2 0 0x000000000 0x7fefb0215b20 0x342021fdf0 0x000000000 /lib64/ld-linux-x86-64.so.2
+preloaded_image: 1 1  0x000000000 0x7f6010962b20 0x000600e68 0x000000000 /home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop
+preloaded_image: 2 0 0x000000000 0x7f6010962b20 0x342021fdf0 0x000000000 /lib64/ld-linux-x86-64.so.2
 -- end of image-load-log ----------------------------------------- 
 copy_images: 0
-inscount: 136174
-OSTid: 28234
+inscount: 135274
+OSTid: 29003
 log_entries: 90
 ended_before_sc: 0
 num_logged_true_dependencies (RAW): 0
@@ -25,7 +25,6 @@ ip_entry:restoretext_pc: 0x342000b687
 ip_entry:restoretext_pc: 0x3420844339
 ip_entry:restoretext_pc: 0x342001171f
 ip_entry:restoretext_pc: 0x3420015f57
-ip_entry:restoretext_pc: 0x3420015f64
 ip_entry:restoretext_pc: 0x342001174c
 ip_entry:restoretext_pc: 0x3420015fea
 ip_entry:restoretext_pc: 0x342000b826
@@ -49,6 +48,7 @@ ip_entry:restoretext_pc: 0x3420008d24
 ip_entry:restoretext_pc: 0x3420008da2
 ip_entry:restoretext_pc: 0x3420003982
 ip_entry:restoretext_pc: 0x3420008de4
+ip_entry:restoretext_pc: 0x342000ef44
 ip_entry:restoretext_pc: 0x34200077ab
 ip_entry:restoretext_pc: 0x3420835bf4
 ip_entry:restoretext_pc: 0x3420009bfc
