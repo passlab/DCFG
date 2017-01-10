@@ -66,12 +66,12 @@ OS_Computer_name='fornax'
 OS_User_name='yan'
 OS_Version='Linux fornax 2.6.32-573.12.1.el6.x86_64 #1 SMP Tue Dec 15 21:19:08 UTC 2015 intel64'
 />
-<process pid='40634' name='./simple_loop'>
+<process pid='28234' name='./simple_loop'>
 	<module
-		path='/home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop'
+		path='/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop'
 		name='simple_loop'
 		base='0x400000'
-		size='1971'
+		size='1987'
 	>
 	<symbol name='_init'
 		base='0x4003e8' />
@@ -92,13 +92,13 @@ OS_Version='Linux fornax 2.6.32-573.12.1.el6.x86_64 #1 SMP Tue Dec 15 21:19:08 U
 	<symbol name='main'
 		base='0x40059d' />
 	<symbol name='__libc_csu_fini'
-		base='0x4005f0' />
-	<symbol name='__libc_csu_init'
 		base='0x400600' />
+	<symbol name='__libc_csu_init'
+		base='0x400610' />
 	<symbol name='__do_global_ctors_aux'
-		base='0x400690' />
+		base='0x4006a0' />
 	<symbol name='_fini'
-		base='0x4006c8' />
+		base='0x4006d8' />
 	</module>
 	<module
 		path='/lib64/ld-linux-x86-64.so.2'

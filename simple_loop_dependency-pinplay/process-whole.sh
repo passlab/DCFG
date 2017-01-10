@@ -15,7 +15,7 @@ echo '$PIN_ROOT/extras/dcfg/bin/intel64/dcfg-to-dot whole.pinball/log_0.dcfg.jso
 $PIN_ROOT/extras/dcfg/bin/intel64/dcfg-to-dot whole.pinball/log_0.dcfg.json.bz2  whole.dcfg.dot $loopid
 echo "Creating whole.dcfg.dot.pdf.."
 echo 'dot -Tpdf -O whole.dcfg.dot'
-# dot -Tpdf -O whole.dcfg.dot
+dot -Tpdf -O whole.dcfg.dot
 
 echo "Relogging $startaddr:$startcount -- $endcount : start:address:$startaddr:count$startcount,stop:address:$endaddr:count$endcount "
 echo '$PIN_ROOT/extras/pinplay/scripts/relog --pintool $PIN_ROOT/extras/dcfg/bin/intel64/dcfg-driver.so --pintool_options "-dcfg -dcfg:read_dcfg 1 -log:control start:address:$startaddr:count$startcount,stop:address:$endaddr:count$endcount " whole.pinball/log_0 region.pinball/log'

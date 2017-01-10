@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-int n = 0;
+int n = 0; int a[100]; int N=100;
 int main(int argc, char *argv[]) {
-	for (int i = 0; i < 3; i++) {
-		n = n + 1;
+	for (int i = 0; i < N; i++) {
+		n = n + a[i];
 	}
 	printf("n = %d\n", n);
 	exit(0);

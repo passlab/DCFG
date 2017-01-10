@@ -1,20 +1,20 @@
 # This file is in the DOT graph-visualization language.
 # See http://www.graphviz.org for a list of programs to render the graph.
 digraph dcfg {
- subgraph cluster_pid40634 {
+ subgraph cluster_pid28234 {
   color=blue;
-  label="Process 40634";
+  label="Process 28234";
   subgraph cluster_image1 {
    color=plum;
-   label="Image 1\n/home/yan/pintool/pinplay-drdebug-pldi2016-3.0-pin-3.0-76991-gcc-linux/extras/pinplay/examples/simple_loop_dependency/simple_loop\nload-addr = 0x400000\nsize = 1972";
+   label="Image 1\n/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop\nload-addr = 0x400000\nsize = 1988";
   subgraph cluster_routine29 {
    color=violet;
    label="Routine 29\nname='main'\naddr=0x40059d";
-   node33 [label="BB 33\naddr=0x4005e5\nnum-instrs=2\nexecutions=1"];
+   node33 [label="BB 33\naddr=0x4005f5\nnum-instrs=2\nexecutions=1"];
    node29 [label="BB 29\naddr=0x40059d\nnum-instrs=7\nexecutions=1"];
-   node30 [label="BB 30\naddr=0x4005b5\nnum-instrs=4\nexecutions=3"];
-   node31 [label="BB 31\naddr=0x4005c8\nnum-instrs=2\nexecutions=4"];
-   node32 [label="BB 32\naddr=0x4005ce\nnum-instrs=5\nexecutions=1"];
+   node30 [label="BB 30\naddr=0x4005b5\nnum-instrs=7\nexecutions=100"];
+   node31 [label="BB 31\naddr=0x4005d3\nnum-instrs=3\nexecutions=101"];
+   node32 [label="BB 32\naddr=0x4005de\nnum-instrs=5\nexecutions=1"];
   }
   } /* image1 */
   subgraph cluster_image2 {
@@ -27,18 +27,18 @@ digraph dcfg {
   } /* image3 */
 
 # Edges
-node1387 -> node29 [label="EDGE1707\nINDIRECT_CALL\nexecutions=1"];
+node1387 -> node29 [label="EDGE1703\nINDIRECT_CALL\nexecutions=1"];
    node1387 [label="BB 1387\naddr=0x342081ed1c\nnum-instrs=11\nexecutions=1"];
-node29 -> node31 [label="EDGE1694\nDIRECT_UNCONDITIONAL_BRANCH\nexecutions=1"];
-node30 -> node31 [label="EDGE467\nFALL_THROUGH\nexecutions=3"];
-node31 -> node32 [label="EDGE1199\nFALL_THROUGH\nexecutions=1"];
-node31 -> node30 [label="EDGE578\nDIRECT_CONDITIONAL_BRANCH\nexecutions=3"];
-node1503 -> node33 [label="EDGE1293\nRETURN\nexecutions=1"];
+node29 -> node31 [label="EDGE1690\nDIRECT_UNCONDITIONAL_BRANCH\nexecutions=1"];
+node30 -> node31 [label="EDGE40\nFALL_THROUGH\nexecutions=100"];
+node31 -> node32 [label="EDGE1193\nFALL_THROUGH\nexecutions=1"];
+node31 -> node30 [label="EDGE41\nDIRECT_CONDITIONAL_BRANCH\nexecutions=100"];
+node1503 -> node33 [label="EDGE1100\nRETURN\nexecutions=1"];
    node1503 [label="BB 1503\naddr=0x342084f18a\nnum-instrs=2\nexecutions=1"];
-node32 -> node9 [label="EDGE2004\nDIRECT_CALL\nexecutions=1"];
+node32 -> node9 [label="EDGE1905\nDIRECT_CALL\nexecutions=1"];
    node9 [label="BB 9\naddr=0x400410\nnum-instrs=1\nexecutions=1"];
-node32 -> node33 [label="EDGE2372\nCALL_BYPASS\nexecutions=0"];
-node33 -> node13 [label="EDGE1973\nDIRECT_CALL\nexecutions=1"];
+node32 -> node33 [label="EDGE2375\nCALL_BYPASS\nexecutions=0"];
+node33 -> node13 [label="EDGE2027\nDIRECT_CALL\nexecutions=1"];
    node13 [label="BB 13\naddr=0x400430\nnum-instrs=1\nexecutions=1"];
- } /* pid40634 */
+ } /* pid28234 */
 }
