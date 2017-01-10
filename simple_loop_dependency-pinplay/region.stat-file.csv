@@ -1,7 +1,7 @@
 loop id,source file,source line number,entry-source-address,entry-source-count,entry-address,total-count,start-count,end-count
-1740,/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop.c,5,0x*NA*,*NA*,0x4005c8,4,1,4
+1738,/home/yan/pintool/DCFG/simple_loop_dependency-pinplay/simple_loop.c,5,0x*NA*,*NA*,0x4005d3,101,1,101
 startAddr endAddr# bbId source file:line number execCount
-0x4005b5 0x4005be # bbid 30 simple_loop.c:6 3
-0x4005c4 0x4005c4 # bbid 30 simple_loop.c:5 3
-0x4005c8 0x4005c8 # bbid 1740 simple_loop.c:5 4
-0x4005cc 0x4005cc # bbid 1741 simple_loop.c:5 4
+0x4005b5 0x4005c9 # bbid 30 simple_loop.c:6 100
+0x4005cf 0x4005cf # bbid 30 simple_loop.c:5 100
+0x4005d3 0x4005d9 # bbid 1738 simple_loop.c:5 101
+0x4005dc 0x4005dc # bbid 1739 simple_loop.c:5 101
