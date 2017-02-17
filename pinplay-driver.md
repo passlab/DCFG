@@ -6,6 +6,25 @@ Arguments:
 
 Pin tools switches
 
+-IPD_Dir  [default ./cd]
+	immediate postdominator info's directory
+-TARGET_DIR  [default ./TARGET/]
+	target directory
+-break_on_slice  [default -1]
+	Automatically set breakpoints on all statements in slice id N
+	previously generated
+-cd_file  [default controlD]
+	a file containing the dynamic control dependence infomation
+-disable_control_dependence  [default 0]
+	Disable control dependencies
+-forward_slice_limit  [default -1]
+	Limit the number of trace blocks sliced
+-func_base_name  [default function]
+	when the function name is too long to be the ipd file name, we change
+	the long function name to shorter name, this is the base function name
+-func_name_map  [default func_name_map.ii]
+	when the function name is too long to be the ipd file name, we change
+	the function name to a shorter one, and we record this mapping here
 -gdb:cmd_file  [default ]
 	File where 'target remote' command will be output so a script can
 	monitor it and invoke GDB.
@@ -17,12 +36,29 @@ Pin tools switches
 	tool                             to print help message)
 -log  [default 0]
 	Activate the pinplay logger
+-log_file  [default compact_log]
+	compact trace file
 -logfile  [default pintool.log]
 	The log file path and file name
+-lp_file  [default limited_preprocess]
+	do limited preprocessing to the given log file defined by log_file,
+	and output the result into this file
+-record_pc  [default 0]
+	record previous program counter for stack smash bugs
 -replay  [default 0]
 	Activate the pinplay replayer
+-slice  [default ]
+	slice criterion
+-static_analysis  [default ~/pin/pinplay-drdebug-1.3-pin-2.13-65163-gcc.4.4.7-linux/extras/pinplay/bin/intel64/StaticAnalysis]
+	Static Analysis to compute IPD for control dependence
+-target  [default 0]
+	Collect Dynamic Jump Target
+-trace  [default 0]
+	Turn on tracing after specified instructions get executed
 -unique_logfile  [default 0]
 	The log file names will contain the pid
+-variable_file  [default variable_name.out]
+	variable names and addresses mapping file
 
 Call Stack knobs
 
@@ -470,4 +506,5 @@ General switches (available in pin and tool)
 
 -slow_asserts  [default 0]
 	Perform expensive sanity checks
+
 ~~~~

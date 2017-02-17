@@ -520,5 +520,4 @@ General switches (available in pin and tool)
 
 -slow_asserts  [default 0]
 	Perform expensive sanity checks
-
 ~~~~

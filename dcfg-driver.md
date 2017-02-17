@@ -1,6 +1,6 @@
 ### dcfg-driver pintool options (version 3.2) 
 ~~~~
-[yan@fornax simple_loop_dependency-pinplay]$ /home/yan/tools/pintool/pinplay-drdebug-3.2-pin-3.2-81205-gcc-linux/pin -follow_execv -t /home/yan/tools/pintool/pinplay-drdebug-3.2-pin-3.2-81205-gcc-linux/extras/dcfg/bin/intel64/dcfg-driver.so -h -- ./simple_loop
+[yan@fornax simple_loop_dependency-pinplay]$ $PIN_ROOT/pin -follow_execv -t $PIN_ROOT/extras/dcfg/bin/intel64/dcfg-driver.so -h -- ./simple_loop
 This tool creates a Dynamic Control Flow Graph (DCFG) of the target application.
 
 
@@ -490,4 +490,5 @@ General switches (available in pin and tool)
 
 -slow_asserts  [default 0]
 	Perform expensive sanity checks
+
 ~~~~
